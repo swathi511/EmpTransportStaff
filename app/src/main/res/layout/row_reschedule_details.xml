@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/resh_lLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView android:id="@+id/resh_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rep_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d0d0d0"/>
+
+        <TextView android:id="@+id/resh_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rep_time"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d0d0d0"/>
+
+        <TextView android:id="@+id/resh_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rep_place"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/resh_tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pending_approval"
+        android:textSize="10sp"
+        android:textColor="#df1a1a"
+        android:layout_marginRight="12dp"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/resh_tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="12dp"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+
+</LinearLayout>

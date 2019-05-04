@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Employee Transportation</string>
+    <string name="schedule">Schedule</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="track_ride">Track Ride</string>
+    <string name="my_trip_details">My Trip Details</string>
+    <string name="travel_to_work">Travel To Work</string>
+    <string name="company_vehicle">Office Vehicle</string>
+    <string name="own_vehicle">Own Vehicle</string>
+    <string name="save_trip">Save Trip</string>
+    <string name="reschedule_trip">Reschedule Trip</string>
+    <string name="my_profile">My Profile</string>
+    <string name="rep_date">Reporting Date</string>
+    <string name="rep_time">Reporting Time</string>
+    <string name="rep_place">Report from</string>
+    <string name="comments">Comments</string>
+    <string name="work">Work</string>
+    <string name="home">Home</string>
+    <string name="submit">Submit</string>
+    <string name="call_driver">Call driver</string>
+    <string name="track_cab">Track cab</string>
+    <string name="driver_name">Driver name</string>
+    <string name="veh_reg_no">Veh Reg. No</string>
+    <string name="my_trips">My Trips</string>
+    <string name="back">Back</string>
+    <string name="refresh">Refresh</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="reporting_req">Reporting Requests</string>
+    <string name="reschedule_req">Reschedule Requests</string>
+    <string name="trip_in_progress">Trip In Progress</string>
+    <string name="current_loc">Current Location</string>
+    <string name="staff_name">Staff Name</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_date">Select Date</string>
+    <string name="yes">Yes</string>
+    <string name="select_time">Select Time</string>
+    <string name="date">Date</string>
+    <string name="pending_approval">Pending Approval</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Book a Taxi</item>
+        <item>Your Profile</item>
+        <item>Your Rides</item>
+    </string-array>
+    <string name="edit">Edit</string>
+</resources>

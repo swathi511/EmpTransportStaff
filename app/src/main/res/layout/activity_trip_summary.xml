@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout android:id="@+id/ats_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_power"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reschedule"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rect_white_stroke_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/ats_tv_reschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reschedule"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/rect_stroke_primary_bg"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ats_iv_driver"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        fresco:backgroundImage="@color/colorAshLight"
+        android:padding="2dp"
+        android:layout_margin="16dp"
+        fresco:roundAsCircle="true"
+        android:layout_gravity="center"/>
+
+    <TextView android:id="@+id/ats_tv_staff_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/staff_name"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_calendar"
+            android:layout_toLeftOf="@+id/ats_tv_today_date"/>
+
+
+    <TextView android:id="@+id/ats_tv_today_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dd MMM yy"
+        android:textColor="#787575"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="12dp"/>
+
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_below="@+id/ats_ll1"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp">
+
+    <TextView android:id="@+id/ats_tv_travel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/travel_to_work"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerVertical="true" />
+
+            <!--
+
+        <TextView android:id="@+id/ats_tv_rep_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textColor="@color/colorBlack"
+            android:textSize="9sp"
+            android:gravity="right"
+            android:layout_marginRight="16dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:background="@drawable/rect_stroke_primary_bg"
+            android:layout_gravity="right"
+            android:padding="4dp"
+            android:layout_marginBottom="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            />-->
+
+
+        </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView android:id="@+id/ats_tv_company_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_vehicle"
+            android:background="@drawable/rect_accent_solid_nc_bg"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:layout_marginRight="8dp"/>
+        <TextView android:id="@+id/ats_tv_own_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/own_vehicle"
+            android:background="@drawable/rect_accent_stroke_nc_single_bg"
+            android:textColor="@color/colorAccent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    <View android:id="@+id/ats_vw1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center">
+
+
+    <TextView android:id="@+id/ats_tv_my_trips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_trips"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textColor="#089483"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+        <TextView android:id="@+id/ats_tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:background="@drawable/rect_stroke_primary_bg"
+            android:padding="8dp"/>
+
+
+    </RelativeLayout>
+
+
+<RelativeLayout android:id="@+id/ats_rlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:gravity="bottom">
+
+
+    <LinearLayout android:id="@+id/ats_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView android:id="@+id/ats_tv_date"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="0"
+                android:background="@drawable/round_btn"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/ats_tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView android:id="@+id/ats_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hh:mm:ss"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView android:id="@+id/ats_tv_route_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC-XYZ Route"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp"
+                android:gravity="left"
+                android:layout_gravity="center">
+
+                <ImageView android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/profile"/>
+
+                <TextView android:id="@+id/ats_tv_driver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/driver_name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp"
+                android:gravity="left"
+                android:layout_gravity="center">
+
+                <ImageView android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/car"/>
+
+                <TextView android:id="@+id/ats_tv_veh_reg_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/veh_reg_no"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <ImageView android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/call"/>
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver name"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="left"-->
+            <!--android:padding="8dp">-->
+
+            <!--<ImageView android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_account"/>-->
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ats_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ats_ll"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView android:id="@+id/ats_tv_call_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_driver"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/rect_stroke_accent_bg"
+            android:padding="6dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/ats_tv_track_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track_cab"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/rect_stroke_accent_bg"
+            android:padding="6dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <View android:id="@+id/ats_vw"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/ats_ll1"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>

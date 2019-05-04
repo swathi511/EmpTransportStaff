@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_time"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:textStyle="bold"/>
+
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:background="@drawable/rect_ash_stroke"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+        <Button android:id="@+id/at_bt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:background="@drawable/rect_stroke_accent_bg"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp"/>
+
+        <Button android:id="@+id/at_bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:background="@drawable/rect_stroke_accent_bg"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

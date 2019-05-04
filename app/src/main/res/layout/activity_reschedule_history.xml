@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:id="@+id/ats_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reschedule_req"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout android:id="@+id/arh_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/colorWhite">
+
+        <ImageView android:layout_width="24dp"
+            android:layout_height="24dp"
+           android:src="@drawable/ic_calendar"
+            android:layout_weight="1.4"
+            android:gravity="center" />
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d0d0d0"
+            android:visibility="gone"/>
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/new_clock"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d0d0d0"
+            android:visibility="gone"/>
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <View android:id="@+id/arh_vw"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#d0d0d0"
+        
+        android:layout_below="@+id/arh_ll"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/arqh_rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/arh_vw">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView android:id="@+id/arqh_iv_refresh"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/refresh"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/round_btn"
+        android:padding="11dp" />
+
+</RelativeLayout>

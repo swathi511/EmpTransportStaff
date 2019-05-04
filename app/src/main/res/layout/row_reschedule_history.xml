@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/resh_lLayout">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporting Date and Time"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="left"/>
+
+        <TextView android:id="@+id/resh_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/date"
+            android:textColor="@color/colorAccent"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+
+        </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporting  From"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="left"/>
+
+        <TextView android:id="@+id/resh_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Work/Home"
+            android:textColor="@color/colorAccent"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="left"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/resh_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="@string/pending_approval"
+            android:textColor="#df1212"
+            android:gravity="right"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_edit"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/resh_tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="12dp"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

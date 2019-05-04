@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DateTimePicker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout android:id="@+id/am_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reschedule_trip"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+        <TextView android:id="@+id/ar_tv_my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rect_white_stroke_bg"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rep_date"
+            android:textColor="@color/colorAsh"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textStyle="bold"/>
+
+        <ImageView android:id="@+id/ar_iv_rep_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/ar_tv_rep_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dd-mm-yyyy"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rep_time"
+            android:textColor="@color/colorAsh"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textStyle="bold"/>
+
+        <ImageView android:id="@+id/ar_iv_rep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="right"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/ar_tv_rep_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hh:mm:ss"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rep_place"
+            android:textColor="@color/colorAsh"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="right"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView android:id="@+id/ar_tv_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work"
+            android:textColor="@color/colorAccent"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:background="@drawable/rect_stroke_accent_bg"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView android:id="@+id/ar_tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textColor="@color/colorAshLight"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:background="@drawable/rect_ash_stroke_single_line"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments"
+            android:textColor="@color/colorAsh"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <EditText android:id="@+id/ar_et_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:hint="Write here ..."
+        android:textSize="15sp"
+        android:textColorHint="@color/colorAshLight"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:lines="5"
+        android:gravity="left"
+        android:background="@drawable/rect_ash_stroke_single_line"
+        android:padding="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/ar_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rect_solid_accent_bg"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
